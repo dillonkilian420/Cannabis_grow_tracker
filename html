@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cannabis Grow Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Cannabis Grow Tracker</h1>
+  </header>
+
+  <main>
+    <section class="strain-selection">
+      <h2>Select Your Cannabis Strain</h2>
+      <select id="strainSelect">
+        <option value="indica">Indica</option>
+        <option value="sativa">Sativa</option>
+        <option value="hybrid">Hybrid</option>
+        <option value="highCBD">High CBD</option>
+      </select>
+    </section>
+
+    <section class="grow-cycle">
+      <h2>Grow Cycle Stage</h2>
+      <select id="growthStage">
+        <option value="seedling">Seedling</option>
+        <option value="vegetative">Vegetative</option>
+        <option value="flowering">Flowering</option>
+        <option value="harvest">Harvest</option>
+      </select>
+    </section>
+
+    <section class="watering-reminder">
+      <h2>Watering Reminder</h2>
+      <button id="setReminder">Set Watering Reminder</button>
+      <p id="reminderMessage"></p>
+    </section>
+
+    <section class="moon-phase">
+      <h2>Moon Phase</h2>
+      <div id="moonPhase"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
